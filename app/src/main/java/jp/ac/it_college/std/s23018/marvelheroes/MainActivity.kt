@@ -5,10 +5,13 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import jp.ac.it_college.std.s23018.marvelheroes.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +23,17 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        binding.apply {
+            lvHeroList.apply {
+                adapter = HeroListAdapter(Hero.list)
+                val manager = LinearLayoutManager(this@MainActivity)
+                layoutManager = manager
+                addItemDecoration(
+                    DividerItemDecoration(this@MainActivity, manager.orientation)
+                )
+            }
         }
     }
 }
