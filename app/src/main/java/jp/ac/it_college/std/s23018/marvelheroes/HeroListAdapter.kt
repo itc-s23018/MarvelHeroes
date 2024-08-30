@@ -5,8 +5,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import jp.ac.it_college.std.s23018.marvelheroes.databinding.ActivityMainBinding
-import jp.ac.it_college.std.s23018.marvelheroes.databinding.HeroRowBinding
 
 class HeroListAdapter(private val heroList: List<Hero>)
     : RecyclerView.Adapter<HeroListAdapter.ViewHolder>() {

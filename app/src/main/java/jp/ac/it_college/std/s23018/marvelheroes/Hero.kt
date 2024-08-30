@@ -16,11 +16,10 @@ data class Hero(
                     listOf(
                         Hero("アイアンマン","Iron Man"),
                         Hero("キャプテンアメリカ", "Captain America"),
-                        Hero("ソー", "Thor"),
+                        Hero("ソー", "thor"),
                         Hero("ハルク", "Hulk"),
-                        Hero("ブラックウィドウ", "Black Widow"),
-                        Hero( "ホークアイ", "Hawk eye"),
-                        Hero("スパイダーマン", "SpiderMan")
+                        Hero("ブラックウィドウ", "black widow"),
+                        Hero( "ホークアイ", "hawkeye"),
                     )
                 } else {
                     listOf(
@@ -30,7 +29,6 @@ data class Hero(
                         Hero("Hulk", "Hulk"),
                         Hero( "BlackWidow","Black Widow"),
                         Hero("Hawkeye", "Hawkeye"),
-                        Hero("Spider-Man", "SpiderMan")
                     )
                 }
             }

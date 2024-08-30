@@ -84,7 +84,6 @@ class MainActivity : AppCompatActivity() {
                     val inputStream = connection.inputStream
                     val jsonResponse = inputStream.bufferedReader().use { it.readText() }
 
-                    // JSONのデシリアライズ
                     try {
                         val json = Json { ignoreUnknownKeys = true }
                         val response = json.decodeFromString(MavelHeroResponse.serializer(), jsonResponse)
