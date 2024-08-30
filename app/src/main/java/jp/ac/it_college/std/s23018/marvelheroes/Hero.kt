@@ -14,23 +14,23 @@ data class Hero(
                 val locales = ConfigurationCompat.getLocales(Resources.getSystem().configuration)
                 return if (locales.get(0)?.language == Locale.JAPAN.language) {
                     listOf(
-                        Hero("アイアンマン","Ironman"),
-                        Hero("キャプテンアメリカ", "CaptainAmerica"),
+                        Hero("アイアンマン","Iron Man"),
+                        Hero("キャプテンアメリカ", "Captain America"),
                         Hero("ソー", "Thor"),
                         Hero("ハルク", "Hulk"),
-                        Hero("ブラックウィドウ", "BlackWidow"),
-                        Hero("ホークアイ", "Hawkeye"),
+                        Hero("ブラックウィドウ", "Black Widow"),
+                        Hero( "ホークアイ", "Hawk eye"),
+                        Hero("スパイダーマン", "SpiderMan")
                     )
                 } else {
                     listOf(
-                        Hero("Ironman", "Ironman"),
+                        Hero( "Ironman", "Iron Man"),
                         Hero("Captain America", "Captain America"),
                         Hero("Thor", "Thor"),
                         Hero("Hulk", "Hulk"),
-                        Hero("BlackWidow","BlackWidow"),
-                        Hero("Hawkeye", "Hawkeye")
-
-
+                        Hero( "BlackWidow","Black Widow"),
+                        Hero("Hawkeye", "Hawkeye"),
+                        Hero("Spider-Man", "SpiderMan")
                     )
                 }
             }

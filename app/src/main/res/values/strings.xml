@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MarvelHeroes</string>
+    <string name="tvDetailsTitle">HeroDetails</string>
 </resources>
